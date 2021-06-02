@@ -1,4 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-*{
-    box-sizing: border-box;
+@keyframes slideInDate{
+    0%{
+        transform: translateX(-249px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.todo__header.overflow{
+    overflow: hidden;
+    transform: translateX(10px);
+}
+
+.todo__header .overflow h1{
+    margin: 0;
+    animation: slideInDate 0.5s ease both;
+}
+.todo__header .overflow #todaysdate{
+    transform: translateX(-96px);
+    display: block;
+    animation: slideInDate 0.4s 0.1s both;
 }
