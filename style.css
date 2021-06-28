@@ -21,3 +21,31 @@
     display: block;
     animation: slideInDate 0.4s 0.1s both;
 }
+.todoinput{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px #777;
+    background: #fff;
+    transform: translateY(-40%);
+}
+
+.todoinput input{
+    width: calc(100% - 60px);
+    padding: 10px;
+    outline: none;
+    display: inline-block;
+}
+.todoinput input::placeholder{
+    font-family: poppins;
+    font-size: medium;
+}
+.todoinput .todo_button{
+    display: inline-block;
+    border: none;
+    padding: 12px;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
